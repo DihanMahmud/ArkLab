@@ -2,7 +2,7 @@ export interface Agent {
   id: string;
   name: string;
   description: string;
-  status: string;
+  status: 'Active' | 'Beta' | 'Archived';
   category: string;
   pricingModel: 'Subscription' | 'Per-Use' | 'Free Tier';
 }
