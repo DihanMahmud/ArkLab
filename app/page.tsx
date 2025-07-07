@@ -10,7 +10,7 @@ async function getAgents(): Promise<Agent[]> {
   // Simulate API delay
   await new Promise(resolve => setTimeout(resolve, 1000));
   
-  const agents: Agent[] = mockAgents;
+  const agents: Agent[] = mockAgents as Agent[];
   return agents;
 }
 
